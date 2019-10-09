@@ -39,7 +39,7 @@ function guessLetter(){
                 if(!found){
                     guesses--
                 }
-                if((guesses === 0)) && (output.includes('_'))){
+                if((guesses === 0) && (output.includes('_'))){
                     console.log('----------------------------------------');
                     console.log("YOU LOSE!");
                     console.log("The answer was: " + word.stringWord);
@@ -65,7 +65,7 @@ guessLetter();
 
 function randomWord() {
     var indexOfWord = Math.floor(Math.random() * randomWords.length);
-    return new Word(randomWords[indexOfWord])
+    return new word(randomWords[indexOfWord])
 }
 function playAgain() {
     inquirer

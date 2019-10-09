@@ -1,8 +1,9 @@
 var Letter = require("./letter")
-function Word(word) {
-    var splitword = word.split('');
+function word(word) {
+    console.log(response)
+    var splitWord = word.split(" "); // Issue with split
     var wordArray = [];
-    splitword.forEach(function(element){
+    splitWord.forEach(function(element){
         var letter = new Letter(element);
         wordArray.push(letter);
     })
