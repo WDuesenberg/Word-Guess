@@ -1,6 +1,7 @@
 var inquirer = require("inquirer");
 var Word = require("./word");
-var randomWords = require("./letter")
+var randomWord = require("./letter");
+var listOfWords = require("./list");
 
 var question = [{
     type: "input",
@@ -64,8 +65,8 @@ console.log("You have: " + guesses + " guesses remaining. \n");
 guessLetter();
 
 function randomWord() {
-    var indexOfWord = Math.floor(Math.random() * randomWords.length);
-    return new word(randomWords[indexOfWord])
+    var indexOfWord = Math.floor(Math.random() * listOfWords.length);
+    return new Word(listOfWords[indexOfWord])
 }
 function playAgain() {
     inquirer

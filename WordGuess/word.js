@@ -1,6 +1,6 @@
 var Letter = require("./letter")
-function word(word) {
-    console.log(response)
+function Word(word) {
+    console.log(word);
     var splitWord = word.split(" "); // Issue with split
     var wordArray = [];
     splitWord.forEach(function(element){
@@ -12,7 +12,7 @@ function word(word) {
     this.wordDisplay = function(){
         var display = [];
         this.word.forEach(function(element){
-            display.push(element,display());            
+            display.push(element);            
         })
         return display;
     }
